@@ -1,5 +1,5 @@
 RAG stands for Retrieval-Augmented Generation. 
-RAG is a technique that improves LLM accuracy by retrieving relevant information from trusted sources before generating a response.
+RAG is a technique that improves LLM accuracy by retrieving relevant information from trusted sources before generating a response. In this document, recommendation-system examples are used to illustrate how RAG can retrieve and explain recommendation-related information. The focus is on improving the accuracy of generated answers rather than generating recommendations themselves.
 
 # Basic RAG Flow
 ```mermaid
@@ -235,7 +235,7 @@ Example:
 - Search Viewer Engagement Data
 - Generate root-cause explanation
 
-## Techniques That Improve Precision Specifically
+## RAG Techniques That Improve Precision
 If your goal is precision in a semantic AI pipeline, the most effective stack is usually:
 ```mermaid
 flowchart TD
@@ -260,17 +260,17 @@ User Question: Why is Stranger Things recommended to Australian viewers who watc
 
 1. Query Expansion
 2. Hybrid Search
-3. Metadata Filtering (Australia region)
+3. Metadata Filtering (Region = Australia)
 4. Reranking
-5. Retrieve viewing-behaviour reports
-6. Ground LLM response on retrieved evidence
-7. Generate answer with citations
+5. Retrieve recommendation-policy documents
+6. Retrieve regional availability information
+7. Retrieve viewer-affinity reports
+8. Ground LLM response on retrieved evidence
+9. Generate answer with citations
 ```
 
 **Result:**
-The AI explains that viewers who watch science-fiction, supernatural mystery, and teen-adventure content exhibit 
-strong behavioural similarity to viewers of Stranger Things. Regional availability data confirms the title is available 
-in Australia, so the recommendation engine assigns a high affinity score and promotes the show in recommendation rows.
+The AI retrieves recommendation guidelines, audience-behaviour reports, and regional content metadata. Using this evidence, it explains that Stranger Things is recommended because viewers with similar viewing patterns frequently engage with science-fiction, mystery, and supernatural content. The response is generated from retrieved recommendation evidence and regional availability data, ensuring that the explanation is accurate and grounded.
 
 
 
