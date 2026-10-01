@@ -48,7 +48,7 @@ Nature Documentary
 ```
 Ranking determines which titles are most likely to be relevant to the user.
 
-# Basic Ranking Flow
+## Basic Ranking Flow
 
 ```mermaid
 flowchart TD
@@ -66,13 +66,13 @@ flowchart TD
 
 ---
 
-# 1. Relevance-Based Ranking
+## 1. Relevance-Based Ranking
 
 The simplest ranking approach.
 
 Candidates are sorted based on relevance scores.
 
-## Search Example
+### Search Example
 
 Query:
 
@@ -98,7 +98,7 @@ Ranked Result:
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 User likes:
 
@@ -125,13 +125,13 @@ Ranked Result:
 
 ---
 
-# 2. Semantic Ranking
+## 2. Semantic Ranking
 
 Uses embeddings and vector similarity.
 
 Instead of matching keywords, semantic ranking measures meaning.
 
-## Search Example
+### Search Example
 
 Query:
 
@@ -151,7 +151,7 @@ Even if the exact words are not present.
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 Watched:
 
@@ -177,11 +177,11 @@ Because the content shares themes and audience interests.
 
 ---
 
-# 3. Personalized Ranking
+## 3. Personalized Ranking
 
 Results are adjusted based on user preferences.
 
-## Search Example
+### Search Example
 
 User Role:
 
@@ -204,7 +204,7 @@ Performance Dashboards
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 User History:
 
@@ -232,11 +232,11 @@ Different users may receive different rankings.
 
 ---
 
-# 4. Contextual Ranking
+## 4. Contextual Ranking
 
 Ranking incorporates real-time context.
 
-## Search Example
+### Search Example
 
 Context:
 
@@ -256,7 +256,7 @@ Australian content policies are ranked higher.
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 Context:
 
@@ -289,7 +289,7 @@ Mobile-first content
 
 ---
 
-# 5. Hybrid Ranking
+## 5. Hybrid Ranking
 
 Combines multiple ranking signals.
 
@@ -305,7 +305,7 @@ Personalization
 
 ---
 
-## Search Example
+### Search Example
 
 Query:
 
@@ -324,7 +324,7 @@ Ranking Formula:
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 Ranking Formula:
 
@@ -345,7 +345,7 @@ This often produces better results than relying on a single signal.
 
 ---
 
-# 6. Learning-to-Rank (LTR)
+## 6. Learning-to-Rank (LTR)
 
 Uses machine learning to optimize ranking decisions.
 
@@ -363,7 +363,7 @@ Likes
 
 ---
 
-## Search Example
+### Search Example
 
 Documents frequently clicked after a search query move higher in rankings.
 
@@ -381,7 +381,7 @@ This guide will gradually rank higher.
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 Content with strong engagement patterns receives higher ranking scores.
 
@@ -409,11 +409,11 @@ Ranked Result:
 
 ---
 
-# 7. Graph-Based Ranking
+## 7. Graph-Based Ranking
 
 Uses relationships between entities.
 
-## Search Example
+### Search Example
 
 ```text
 Recommendation Guide
@@ -427,7 +427,7 @@ Documents connected to highly relevant entities receive higher scores.
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 ```text
 User
@@ -455,11 +455,11 @@ Ranked Result:
 
 ---
 
-# 8. Diversity Ranking
+## 8. Diversity Ranking
 
 Ensures results are not overly similar.
 
-## Search Example
+### Search Example
 
 Without Diversity:
 
@@ -480,7 +480,7 @@ With Diversity:
 
 ---
 
-## Recommendation Example
+### Recommendation Example
 
 Without Diversity:
 
@@ -507,7 +507,7 @@ With Diversity:
 
 ---
 
-# Multi-Stage Ranking Architecture
+## Multi-Stage Ranking Architecture
 
 Modern semantic AI systems often use multiple ranking stages.
 
@@ -529,15 +529,15 @@ This balances speed and precision.
 
 ---
 
-# Example: Search Ranking Pipeline
+### Example: Search Ranking Pipeline
 
-### User Query
+**User Query**
 
 ```text
 Why is Stranger Things recommended?
 ```
 
-### Pipeline
+**Pipeline**
 
 ```text
 1. Retrieve 100 documents
@@ -547,7 +547,7 @@ Why is Stranger Things recommended?
 5. Return Top 5 Results
 ```
 
-### Ranked Results
+**Ranked Results**
 
 ```text
 1. Recommendation Policy Guide
@@ -563,9 +563,9 @@ The user receives the most relevant documents first, enabling the LLM or search 
 
 ---
 
-# Example: Recommendation Ranking Pipeline
+### Example: Recommendation Ranking Pipeline
 
-### User Activity
+**User Activity**
 
 ```text
 Recently Watched:
@@ -574,7 +574,7 @@ Recently Watched:
 - Wednesday
 ```
 
-### Pipeline
+**Pipeline**
 
 ```text
 1. Retrieve 1000 candidate titles
