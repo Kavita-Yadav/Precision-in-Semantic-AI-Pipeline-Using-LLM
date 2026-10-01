@@ -58,7 +58,7 @@ Distribution agreement changes
 ```
 The answer becomes more accurate because the model understands the terminology used within the domain.
 
-## 3. User Context
+### 3. User Context
 User context provides information about the individual interacting with the system.
 Example:
 ```json
@@ -73,7 +73,7 @@ Example:
 ```
 The LLM can use this information to personalize responses and recommendations.
 
-## 4. Session Context
+### 4. Session Context
 Session context captures the user's current activity.
 Example:
 Current browsing session:
@@ -88,7 +88,7 @@ Recommend something similar.
 ```
 The LLM understands that "similar" refers to the content in the current session.
 
-## 5. Historical Context
+### 5. Historical Context
 Historical context incorporates past interactions and behaviour.
 Example:
 ```
@@ -102,7 +102,7 @@ The model can use historical preferences to improve recommendation relevance.
 ## Contextual Understanding in Search Systems
 Context improves retrieval accuracy by helping the system understand what the user actually means.
 
-## Example: Semantic Search
+### Example: Semantic Search
 
 ** User Question: ** Why is Stranger Things unavailable?
 
@@ -131,7 +131,7 @@ The LLM generates a more precise answer because it searched within the correct b
 ## Contextual Understanding in Recommendation Systems
 Context helps recommendation systems identify content that is most relevant to a specific user.
 
-## Example: Personalized Recommendations
+### Example: Personalized Recommendations
 
 ** User Profile**
 ```json
