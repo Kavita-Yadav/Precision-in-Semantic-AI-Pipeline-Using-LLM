@@ -64,6 +64,7 @@ flowchart TD
 ### Components of a Semantic Cache
 
 **Embedding Model**
+
 Converts text into vectors.
 Example: Why is Stranger Things recommended?
 Now becomes:
@@ -85,6 +86,7 @@ pgvector
 ```
 
 **Similarity Search**
+
 Determines whether a query resembles previous requests.
 Example: Why is Stranger Things recommended?
 and 
